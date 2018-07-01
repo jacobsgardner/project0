@@ -1,0 +1,49 @@
+$pad: 25px;
+
+.glyphicon {
+    font-size: 50px;
+}
+
+body {
+    background-color:Moccasin;
+}
+#title{
+    color:SaddleBrown;
+    text-align:center;
+}
+
+#main-title{
+    @extend #title;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+}
+
+.center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:$pad;
+    @media (min-width: 500px) {
+        width:70%;
+}
+    @media (max-width: 499px) {
+        width:40%;
+    }
+}
+.text-style{
+    padding-left:$pad;
+    padding-right:$pad;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:$pad;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+}
